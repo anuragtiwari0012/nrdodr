@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODR Platform</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">NARAD</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#login" class="btn">Login/Sign-Up</a></li>
+                </ul>
+            </nav>
+            <!-- Talk to My Lawyer Button on Top Right -->
+            <a href="lawyer-info.html" class="talk-to-lawyer-btn">Talk to My Lawyer</a>
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Justice at Your Fingertips </h1>
+                <p>LOWEST IN PRICE, SAFE & SECURE</p>
+                <a href="form.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>"Narad is an innovative online dispute resolution platform designed to make legal assistance accessible, efficient, and affordable. Whether you're facing a personal, business, or legal issue, Narad connects you with trusted legal experts who can guide you through the resolution process. Our mission is to provide users with quick, fair, and effective solutions to their disputes, all from the comfort of their home. With features like "Talk to My Lawyer," we ensure that legal advice is just a click away—bringing justice to your fingertips."</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Mediation</h3>
+                    <p>Confidential and effective mediation services.</p>
+                </div>
+                <div class="card">
+                    <h3>Arbitration</h3>
+                    <p>Binding arbitration with qualified arbitrators.</p>
+                </div>
+                <div class="card">
+                    <h3>Case Management</h3>
+                    <p>Efficiently manage your cases online.</p>
+                </div>
+                <div class="card">
+                    <h3>Document Sharing</h3>
+                    <p>Securely upload and share documents.</p>
+                </div>
+                <div class="card">
+                    <h3>Video Conferencing</h3>
+                    <p>Conduct resolutions via secure video calls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Expert Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"The mediation service is smooth and efficient. We resolved our dispute quickly without any hassle."</p>
+                    <h3>- Krishna Mishra </h3>
+                </div>
+                <div class="testimonial">
+                    <p>"Excellent platform for arbitration. The process is clear and the arbitrators were very professional."</p>
+                    <h3>- Aman Singh </h3>
+                </div>
+                <div class="testimonial">
+                    <p>"Case management tools are top-notch. Everything is organized and easy to access."</p>
+                    <h3>- Akash Boob </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <h2>Contact Us</h2>
+        <input type="hidden" name="access_key" value="f2e80f82-76ff-4e9c-a196-791cc5b62429">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="service">Service Type</label>
+        <select id="service" name="service" required>
+            <option value="mediation">Mediation</option>
+            <option value="arbitration">Arbitration</option>
+            <option value="conflict-coaching">Judicial Support</option>
+        </select>
+
+        <label for="details">Details about the Dispute</label>
+        <textarea id="details" name="details" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: naradlegal@gmail.com</p>
+        <p>Phone: +91 8459720357</p>
+        <p>Follow Us:</p>
+        <p>
+            <div class="Social media">
+                <a href="https://www.instagram.com/naradlegal/?utm_source=ig_web_button_share_sheet">Instagram</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">LinkedIn</a> <br><br>
+                <a href="ourteam.jpg">OUR TEAM</a>
+            </div>
+        </p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">NARAD</div>
+            </div> 
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="tos.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

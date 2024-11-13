@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to My Lawyer - Narad</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Reset and Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        h1, h2, p {
+            margin: 0;
+        }
+
+        /* Hero Section */
+        #talk-to-lawyer {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #talk-to-lawyer h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        #talk-to-lawyer p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .symbols {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .symbols .symbol {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .symbols svg {
+            max-width: 100%;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        .symbols p {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Scales of Justice Animation */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .features ul li {
+            font-size: 1.2em;
+            padding: 10px 0;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Contact Button */
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Talk to My Lawyer Page -->
+    <section id="talk-to-lawyer">
+        <h1>Talk to My Lawyer</h1>
+        <p>Need legal advice? Get instant access to experienced lawyers who can guide you through your legal issues in a secure and professional manner.</p>
+        <p>Our platform offers affordable legal support and advice, ensuring that you’re not alone when facing legal challenges. Just fill out the form, and our team will get in touch with you promptly!</p>
+
+        <!-- Animated Symbols -->
+        <div class="symbols">
+            <div class="symbol">
+                <!-- Scales of Justice (SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                    <g fill="none" stroke="#333" stroke-width="4">
+                        <circle cx="50" cy="30" r="5">
+                            <animate attributeName="cy" from="30" to="40" dur="0.5s" begin="0s" repeatCount="indefinite" />
+                        </circle>
+                        <line x1="50" y1="10" x2="50" y2="50" />
+                        <line x1="30" y1="50" x2="70" y2="50" />
+                        <line x1="30" y1="50" x2="30" y2="60" />
+                        <line x1="70" y1="50" x2="70" y2="60" />
+                    </g>
+                </svg>
+                <p>Scales of Justice</p>
+            </div>
+
+            <div class="symbol">
+                <!-- Gavel (SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                    <g fill="none" stroke="#333" stroke-width="4">
+                        <rect x="35" y="25" width="30" height="10" />
+                        <line x1="50" y1="35" x2="50" y2="65" />
+                        <line x1="50" y1="65" x2="60" y2="65" />
+                        <line x1="50" y1="65" x2="40" y2="65" />
+                        <line x1="50" y1="35" x2="50" y2="30">
+                            <animate attributeName="y1" from="35" to="40" dur="0.4s" begin="0s" repeatCount="indefinite" />
+                        </line>
+                    </g>
+                </svg>
+                <p>Advocate's Gavel</p>
+            </div>
+        </div>
+
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Legal Help Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .other-issue {
+            display: none;
+            margin-top: 10px;
+        }
+        .other-issue textarea {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Emergency Legal Help Request</h2>
+    <form id="emergencyForm" action="https://api.web3forms.com/submit" method="POST" action="success.html">
+        <div class="form-group">
+            <input type="hidden" name="access_key" value="f2e80f82-76ff-4e9c-a196-791cc5b62429">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="issue">Describe Your Legal Issue:</label>
+            <select id="issue" name="issue" required>
+                <option value="">Select an Option</option>
+                <option value="bribe">Bribe Demand</option>
+                <option value="not_registering_complaint">Not Registering Complaint</option>
+                <option value="corruption">Corruption by Officials</option>
+                <option value="violence">Violence or Threat</option>
+                <option value="discrimination">Discrimination</option>
+                <option value="other">Other (Please Describe Below)</option>
+            </select>
+        </div>
+
+        <div class="form-group other-issue" id="otherIssueGroup">
+            <label for="otherDescription">Please Describe Your Issue:</label>
+            <textarea id="otherDescription" name="otherDescription" placeholder="Describe your issue here..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit Request">
+        </div>
+    </form>
+</div>
+
+<script>
+    // Show/hide the "Other" issue description field based on user selection
+    document.getElementById('issue').addEventListener('change', function() {
+        var otherIssueGroup = document.getElementById('otherIssueGroup');
+        if (this.value === 'other') {
+            otherIssueGroup.style.display = 'block';
+        } else {
+            otherIssueGroup.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+        <!-- Why Choose Our Lawyers -->
+        <div class="features">
+            <h2>Why Choose Our Lawyers?</h2>
+            <ul>
+                <li>Experienced and Trustworthy Legal Experts</li>
+                <li>Affordable and Transparent Pricing</li>
+                <li>Quick Response and Efficient Communication</li>
+                <li>Confidential and Secure Video Conferencing</li>
+                <li>Fast and Reliable Legal Solutions</li>
+            </ul>
+            <a href="#" class="btn-primary">Get Legal Help Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="tos.html">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>
